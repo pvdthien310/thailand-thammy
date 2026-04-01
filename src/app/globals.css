@@ -1,26 +1,111 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf6e3;
+  --foreground: #1a0608;
+}
+
+@theme {
+  --color-primary: #e4c863;
+  --color-secondary: #421216;
+  --color-cream: #fdf6e3;
+  --color-dark: #1a0608;
+  --color-mid: #7b2127;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-heading: var(--font-playfair);
+  --font-body: var(--font-be-vietnam);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-be-vietnam), "Be Vietnam Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), "Playfair Display", serif;
+}
+
+.section-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  color: #e4c863;
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+}
+
+.section-ornament::before,
+.section-ornament::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 4rem;
+  background: linear-gradient(to right, transparent, #e4c863);
+}
+
+.section-ornament::after {
+  background: linear-gradient(to left, transparent, #e4c863);
+}
+
+.gold-border {
+  border: 1px solid rgba(228, 200, 99, 0.35);
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+}
+
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: slide-left 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a0608;
+}
+::-webkit-scrollbar-thumb {
+  background: #e4c863;
+  border-radius: 3px;
 }
