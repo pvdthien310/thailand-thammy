@@ -10,7 +10,7 @@ export default function HeroSection() {
           src={covers[0]}
           alt="Maya Thai – Chân Mày Diện Tướng Thái Lan"
           fill
-          priority
+          preload
           className="object-cover object-center"
           sizes="100vw"
           placeholder="blur"
@@ -78,7 +78,7 @@ export default function HeroSection() {
               alt={`Maya Thai banner ${i + 2}`}
               fill
               className="object-cover object-center"
-              sizes="100vw"
+              sizes="(max-width: 1024px) 100vw, 33vw"
               placeholder="blur"
             />
           </div>

@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { khachDong } from "@/data/images";
 
+const marqueeImages = khachDong.slice(0, 10);
+const featuredCustomers = khachDong.slice(0, 10);
+
 export default function CustomerSection() {
   return (
     <section className="bg-dark py-20 px-4 overflow-hidden">
@@ -19,7 +22,7 @@ export default function CustomerSection() {
         {/* Scrolling marquee row 1 */}
         <div className="relative mb-3 overflow-hidden">
           <div className="animate-marquee flex gap-3 w-max">
-            {[...khachDong, ...khachDong].map((img, i) => (
+            {[...marqueeImages, ...marqueeImages].map((img, i) => (
               <div
                 key={i}
                 className="relative w-48 h-48 sm:w-56 sm:h-56 shrink-0 rounded-xl overflow-hidden img-hover-zoom gold-border"
@@ -39,7 +42,7 @@ export default function CustomerSection() {
 
         {/* Grid fallback + extras */}
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-2 mt-4">
-          {khachDong.slice(0, 15).map((img, i) => (
+          {featuredCustomers.map((img, i) => (
             <div
               key={i}
               className="relative aspect-square rounded-lg overflow-hidden img-hover-zoom opacity-90 hover:opacity-100 transition-opacity"

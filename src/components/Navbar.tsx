@@ -39,11 +39,10 @@ export default function Navbar() {
               alt="Maya Thai Logo"
               fill
               className="object-contain"
+              sizes="48px"
             />
           </div>
-          <span
-            className="font-heading text-primary font-semibold text-xl leading-tight tracking-wide"
-          >
+          <span className="font-heading text-primary font-semibold text-xl leading-tight tracking-wide">
             Maya Thai
           </span>
         </a>
@@ -74,13 +73,19 @@ export default function Navbar() {
           aria-label="Mở menu"
         >
           <span
-            className={`block w-6 h-0.5 bg-primary transition-transform duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
+            className={`block w-6 h-0.5 bg-primary transition-transform duration-300 ${
+              menuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-primary transition-opacity duration-300 ${menuOpen ? "opacity-0" : ""}`}
+            className={`block w-6 h-0.5 bg-primary transition-opacity duration-300 ${
+              menuOpen ? "opacity-0" : ""
+            }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-primary transition-transform duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+            className={`block w-6 h-0.5 bg-primary transition-transform duration-300 ${
+              menuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
           />
         </button>
       </div>

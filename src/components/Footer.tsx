@@ -32,16 +32,21 @@ export default function Footer() {
                   alt="Maya Thai"
                   fill
                   className="object-contain"
+                  sizes="48px"
                 />
               </div>
               <div>
-                <p className="font-heading text-primary font-bold text-xl">Maya Thai</p>
-                <p className="font-body text-white/40 text-xs">Chân Mày Diện Tướng Thái Lan</p>
+                <p className="font-heading text-primary font-bold text-xl">
+                  Maya Thai
+                </p>
+                <p className="font-body text-white/40 text-xs">
+                  Chân Mày Diện Tướng Thái Lan
+                </p>
               </div>
             </div>
             <p className="font-body text-white/50 text-sm leading-relaxed max-w-sm">
-              Nghệ thuật xăm chân mày cao cấp phong cách Thái Lan — nơi vẻ đẹp gặp gỡ
-              tinh hoa văn hóa, nâng tầm thần thái từng người.
+              Nghệ thuật xăm chân mày cao cấp phong cách Thái Lan — nơi vẻ đẹp
+              gặp gỡ tinh hoa văn hóa, nâng tầm thần thái từng người.
             </p>
             <div className="flex gap-3 mt-5">
               {socials.map((s) => (

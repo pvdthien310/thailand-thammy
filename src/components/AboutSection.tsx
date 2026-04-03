@@ -50,6 +50,7 @@ export default function AboutSection() {
                 alt="Maya Thai Logo"
                 fill
                 className="object-contain relative z-10"
+                sizes="(max-width: 640px) 224px, 288px"
               />
             </div>
             <div className="text-center">
