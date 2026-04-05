@@ -65,12 +65,6 @@ const getContactTemplate = ({
                 margin: 0 auto;
               "
             >
-              <span>
-                <img
-                  height="32px"
-                  src="https://i.imgur.com/Z7NzQwU.png"
-                  alt="Avatar logo"
-              /></span>
               LIÊN HỆ MỚI
             </h1>
 
