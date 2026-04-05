@@ -8,19 +8,19 @@ const contactInfo = [
   {
     icon: "📍",
     label: "Địa Chỉ",
-    value: "TP. Hồ Chí Minh (Liên hệ để biết địa chỉ cụ thể)",
+    value: "192 Trần Hưng Đạo, phường Thới Bình, quận Ninh Kiều, thành phố Cần Thơ",
   },
   {
     icon: "📞",
     label: "Điện Thoại",
-    value: "0987 654 321",
+    value: "0838 580 001",
     href: "tel:0987654321",
   },
   {
     icon: "✉️",
     label: "Email",
-    value: "mayathai@gmail.com",
-    href: "mailto:mayathai@gmail.com",
+    value: "chanmaymayathai@gmail.com",
+    href: "mailto:chanmaymayathai@gmail.com",
   },
   {
     icon: "🕐",
@@ -118,10 +118,9 @@ export default function ContactSection() {
               </p>
               <div className="flex gap-3">
                 {[
-                  { label: "Facebook", href: "#" },
-                  { label: "Instagram", href: "#" },
-                  { label: "TikTok", href: "#" },
-                  { label: "Zalo", href: "#" },
+                  { label: "Facebook", href: "https://www.facebook.com/mayathaicantho?locale=vi_VN" },
+                  { label: "Youtube", href: "https://www.youtube.com/@Th%C3%A1iMaya192" },
+                  { label: "Zalo", href: "https://zalo.me/0838580001" },
                 ].map((social) => (
                   <a
                     key={social.label}
@@ -180,7 +179,7 @@ export default function ContactSection() {
                       required
                       value={form.phone}
                       onChange={handleChange}
-                      placeholder="0987 654 321"
+                      placeholder="0838 580 001"
                       className={inputClass}
                     />
                   </div>

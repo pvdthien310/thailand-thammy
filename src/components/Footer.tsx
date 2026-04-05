@@ -10,14 +10,6 @@ const quickLinks = [
   { label: "Liên Hệ", href: "#lien-he" },
 ];
 
-const socials = [
-  { label: "Facebook", href: "#" },
-  { label: "Instagram", href: "#" },
-  { label: "TikTok", href: "#" },
-  { label: "Zalo", href: "#" },
-  { label: "YouTube", href: "#" },
-];
-
 export default function Footer() {
   return (
     <footer className="bg-dark border-t border-primary/10">
@@ -48,18 +40,6 @@ export default function Footer() {
               Nghệ thuật xăm chân mày cao cấp phong cách Thái Lan — nơi vẻ đẹp
               gặp gỡ tinh hoa văn hóa, nâng tầm thần thái từng người.
             </p>
-            <div className="flex gap-3 mt-5">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  className="w-9 h-9 rounded-full border border-primary/25 flex items-center justify-center text-primary/60 text-xs font-body hover:border-primary hover:text-primary transition-colors duration-200"
-                  aria-label={s.label}
-                >
-                  {s.label[0]}
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick links */}
@@ -90,25 +70,25 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <span className="text-primary text-xs mt-1">📍</span>
                 <span className="font-body text-white/50 text-sm leading-relaxed">
-                  TP. Hồ Chí Minh
+                  192 Trần Hưng Đạo, phường Thới Bình, quận Ninh Kiều, thành phố Cần Thơ
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary text-xs">📞</span>
                 <a
-                  href="tel:0987654321"
+                  href="tel:0838580001"
                   className="font-body text-white/50 text-sm hover:text-primary transition-colors"
                 >
-                  0987 654 321
+                  0838 580 001
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary text-xs">✉️</span>
                 <a
-                  href="mailto:mayathai@gmail.com"
+                  href="mailto:chanmaymayathai@gmail.com"
                   className="font-body text-white/50 text-sm hover:text-primary transition-colors"
                 >
-                  mayathai@gmail.com
+                  chanmaymayathai@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">

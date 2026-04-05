@@ -53,7 +53,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="font-body text-sm text-primary/80 hover:text-primary transition-colors duration-200 tracking-wide uppercase"
+              className="font-heading font-bold text-s text-primary/100 hover:text-primary transition-colors duration-200 tracking-wide uppercase"
             >
               {link.label}
             </a>
@@ -98,7 +98,7 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="font-body text-primary/80 hover:text-primary text-sm tracking-wide uppercase py-1"
+              className="font-heading text-primary/80 hover:text-primary text-sm tracking-wide uppercase py-1"
             >
               {link.label}
             </a>
