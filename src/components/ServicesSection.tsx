@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { doVeChanMay, hinhThietKe, mayNu, mayNam } from "@/data/images";
+import { doVeChanMay, hinhThietKe, mayNu, mayNam, moi } from "@/data/images";
 
 const services = [
   {
     id: "may-nu",
-    title: "Chân Mày Nữ",
+    title: "Chân Mày Maya Thái",
     subtitle: "Thanh Tú · Nữ Tính · Tự Nhiên",
     desc: "Đường nét mềm mại, tinh tế theo chuẩn thẩm mỹ Thái Lan — tôn lên vẻ đẹp nữ tính và sự tự tin.",
     image: mayNu[0],
@@ -12,28 +12,28 @@ const services = [
   },
   {
     id: "may-nam",
-    title: "Chân Mày Nam",
+    title: "Chân Mày Nam Thái",
     subtitle: "Mạnh Mẽ · Lịch Lãm · Khí Chất",
     desc: "Dáng mày nam tính, rõ nét — tôn lên khí chất và phong thái đàn ông đích thực.",
     image: mayNam[0],
     href: "#ket-qua",
   },
   {
+    id: "phun-moi",
+    title: "Phun Môi Nano Thái ",
+    subtitle: "Mạnh Mẽ · Lịch Lãm · Khí Chất",
+    desc: "Dáng mày nam tính, rõ nét — tôn lên khí chất và phong thái đàn ông đích thực.",
+    image: moi[0],
+    href: "#ket-qua",
+  },
+  {
     id: "do-ve",
-    title: "Đo Vẽ Chân Mày",
+    title: "Tư Vấn Thiết Kế Chân Mày Theo Diện Tướng Thái Lan ( Miễn Phí )",
     subtitle: "Chuẩn Xác · Tỷ Lệ Vàng · Chuyên Nghiệp",
     desc: "Kỹ thuật đo vẽ theo tỷ lệ vàng khuôn mặt — thiết kế riêng cho từng người, đảm bảo cân đối hoàn hảo.",
     image: doVeChanMay[0],
     href: "#ket-qua",
-  },
-  {
-    id: "thiet-ke",
-    title: "Hình Thiết Kế",
-    subtitle: "Sáng Tạo · Độc Đáo · Cá Nhân Hóa",
-    desc: "Phác thảo thiết kế trước khi thực hiện — bạn được xem và duyệt dáng mày trước khi bắt đầu.",
-    image: hinhThietKe[0],
-    href: "#ket-qua",
-  },
+  }
 ];
 
 export default function ServicesSection() {

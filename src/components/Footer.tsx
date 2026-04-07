@@ -10,6 +10,24 @@ const quickLinks = [
   { label: "Liên Hệ", href: "#lien-he" },
 ];
 
+const actions = [
+  {
+    title: "Call Hotline",
+    iconSrc: "/images/phone.webp",
+    href: "tel:0838580001",
+  },
+  {
+    title: "Zalo",
+    iconSrc: "/images/zalo.webp",
+    href: "https://zalo.me/0838580001",
+  },
+  {
+    title: "Messenger",
+    iconSrc: "/images/messenger.webp",
+    href: "https://m.me/mayathaicantho",
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-dark border-t border-primary/10">
@@ -110,6 +128,25 @@ export default function Footer() {
             Nghệ thuật xăm chân mày cao cấp phong cách Thái Lan
           </p>
         </div>
+      </div>
+
+      <div className="fixed flex flex-col bottom-4 gap-4 left-4">
+        {actions.map((action) => (
+          <a
+            className="animate-zoom"
+            href={action.href}
+            target="_blank"
+            key={action.title}
+          >
+            <Image
+              key={action.title}
+              src={action.iconSrc}
+              alt={action.title}
+              width={40}
+              height={40}
+            />
+          </a>
+        ))}
       </div>
     </footer>
   );

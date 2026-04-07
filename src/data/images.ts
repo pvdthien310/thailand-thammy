@@ -1,5 +1,5 @@
 import logo1 from '@/assets/logo/1.png'
-import logo2 from '@/assets/logo/2.png'
+import logo2 from '@/assets/logo/1.png'
 
 import cover1 from '@/assets/cover/1.png'
 import cover2 from '@/assets/cover/2.png'
@@ -135,7 +135,14 @@ import tuongSan3 from '@/assets/nghe_si/tuong_san/3.png'
 import tuongSan4 from '@/assets/nghe_si/tuong_san/4.png'
 import tuongSan5 from '@/assets/nghe_si/tuong_san/5.png'
 
+
+import moi1 from '@/assets/moi/1.png'
+import moi2 from '@/assets/moi/2.png'
+import moi3 from '@/assets/moi/3.png'
+
 export const logos = { logo1, logo2 }
+
+export const moi = [moi1, moi2, moi3] 
 
 export const covers = [cover1, cover2, cover3, cover4]
 

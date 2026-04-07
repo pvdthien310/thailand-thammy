@@ -5,14 +5,14 @@ export default function HeroSection() {
   return (
     <section className="relative bg-dark overflow-hidden">
       {/* Primary banner */}
-      <div className="relative w-full pt-[calc(100vw*0.38)] sm:pt-[calc(100vw*0.33)] lg:pt-[42%] max-h-[85vh] overflow-hidden mt-16 md:mt-20">
+      <div className="relative w-full pt-[calc(100vw*0.38)] sm:pt-[calc(100vw*0.33)] lg:pt-[35%] max-h-[100vh] overflow-hidden mt-16 md:mt-20">
         <Image
-          src={covers[0]}
+          src={covers[2]}
           alt="Maya Thai – Chân Mày Diện Tướng Thái Lan"
           fill
           preload
           className="object-cover object-center"
-          sizes="100vw"
+          sizes="1000vw"
           placeholder="blur"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/20 via-transparent to-dark/60" />
