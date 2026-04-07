@@ -6,9 +6,9 @@ import { mayNu, mayNam, doVeChanMay } from "@/data/images";
 import type { StaticImageData } from "next/image";
 
 const tabs = [
-  { id: "may-nu", label: "Chân Mày Nữ", images: mayNu },
-  { id: "may-nam", label: "Chân Mày Nam", images: mayNam },
-  { id: "do-ve", label: "Đo Vẽ Chân Mày", images: doVeChanMay },
+  { id: "may-nu", label: "Chân Mày Maya Thái", images: mayNu },
+  { id: "may-nam", label: "Chân Mày Nam Thái", images: mayNam },
+  { id: "do-ve", label: "Tư Vấn Thiết Kế Chân Mày", images: doVeChanMay },
 ];
 
 function ImageGrid({ images }: { images: StaticImageData[] }) {
