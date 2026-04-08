@@ -3,7 +3,7 @@ import { ngoaiCanh } from "@/data/images";
 
 export default function SalonSection() {
   const featured = ngoaiCanh.slice(0, 9);
-  const rest = ngoaiCanh.slice(9, 18);
+  const rest = ngoaiCanh.slice(9, 10);
 
   return (
     <section id="khong-gian" className="bg-cream py-20 px-4">

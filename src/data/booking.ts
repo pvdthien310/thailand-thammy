@@ -127,7 +127,7 @@ export const CUSTOMER_VOICES_DATA = [
     avatar: duongQuynhNga,
     name: "Dương Quỳnh Nga",
     comment:
-      "Mình chọn dịch vụ nốt ruồi nhân tướng vì muốn gương mặt hài hòa và có điểm nhấn tinh tế hơn. Các bạn tư vấn rất kỹ, làm nhẹ tay và đặc biệt giải thích rõ vị trí nào phù hợp với thần thái của mình.",
+      "Mình chọn dịch vụ chân mày Maya Thái vì muốn gương mặt hài hòa và có điểm nhấn tinh tế hơn. Các bạn tư vấn rất kỹ, làm nhẹ tay và đặc biệt giải thích rõ vị trí nào phù hợp với thần thái của mình.",
     time: "2 giờ trước",
     likes: 21,
     replies: [

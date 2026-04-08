@@ -65,25 +65,6 @@ export default function HeroSection() {
           ))}
         </div>
       </div>
-
-      {/* Remaining banners */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-1">
-        {covers.slice(1).map((img, i) => (
-          <div
-            key={i}
-            className="relative w-full pt-[calc(100vw*0.38)] sm:pt-[calc(100vw*0.33)] lg:pt-[42%] max-h-[85vh] overflow-hidden opacity-90 hover:opacity-100 transition-opacity duration-300"
-          >
-            <Image
-              src={img}
-              alt={`Maya Thai banner ${i + 2}`}
-              fill
-              className="object-cover object-center"
-              sizes="(max-width: 1024px) 100vw, 33vw"
-              placeholder="blur"
-            />
-          </div>
-        ))}
-      </div>
     </section>
   );
 }
