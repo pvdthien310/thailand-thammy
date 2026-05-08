@@ -20,9 +20,9 @@ const services = [
   },
   {
     id: "phun-moi",
-    title: "Phun Môi Nano Thái ",
-    subtitle: "Mạnh Mẽ · Lịch Lãm · Khí Chất",
-    desc: "Dáng mày nam tính, rõ nét — tôn lên khí chất và phong thái đàn ông đích thực.",
+    title: "Phun Môi Nano Thái",
+    subtitle: "Căng Mọng · Tự Nhiên · Bền Màu",
+    desc: "Kỹ thuật phun môi nano Thái Lan — tạo màu môi tự nhiên, căng mọng, bền màu lâu dài mà không cần trang điểm.",
     image: moi[0],
     href: "#ket-qua",
   },

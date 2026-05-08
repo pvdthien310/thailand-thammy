@@ -1,13 +1,12 @@
 export const siteName = "Maya Thai";
 
-export const siteTitle = "Maya Thai | Chân Mày Diện Tướng Phong Cách Thái Lan";
+export const siteTitle = "Maya Thai | Xăm Chân Mày Thái Lan Tại Cần Thơ";
 
 export const siteDescription =
-  "Maya Thai là tiệm xăm chân mày cao cấp phong cách Thái Lan, chuyên đo vẽ chân mày, chăm sóc dáng mày và tôn lên thần thái cho cả nam và nữ.";
+  "Maya Thai – tiệm xăm chân mày cao cấp phong cách Thái Lan tại Cần Thơ. Chuyên đo vẽ chuẩn tướng, phun môi nano, tư vấn miễn phí cho nam và nữ. 5.000+ khách hài lòng.";
 
 export const siteLocale = "vi_VN";
 
-export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "http://localhost:3000";
+export const siteUrl = 'https://chanmaymaya.vn';
 
 export const siteUrlObject = new URL(siteUrl);

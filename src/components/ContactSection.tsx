@@ -14,7 +14,7 @@ const contactInfo = [
     icon: "📞",
     label: "Điện Thoại",
     value: "0838 580 001",
-    href: "tel:0987654321",
+    href: "tel:+84838580001",
   },
   {
     icon: "✉️",

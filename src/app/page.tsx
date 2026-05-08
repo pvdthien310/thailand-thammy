@@ -35,13 +35,85 @@ const jsonLd = [
     image: `${siteUrl}/opengraph-image`,
     telephone: "+84-838-580-001",
     email: "chanmaymayathai@gmail.com",
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      addressLocality: "192 Trần Hưng Đạo, phường Thới Bình, quận Ninh Kiều, thành phố Cần Thơ",
+      streetAddress: "192 Trần Hưng Đạo",
+      addressLocality: "Cần Thơ",
+      addressRegion: "Ninh Kiều",
       addressCountry: "VN",
     },
-    areaServed: "VN",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "08:00",
+        closes: "20:00",
+      },
+    ],
+    sameAs: [
+      "https://www.facebook.com/mayathaicantho",
+      "https://www.youtube.com/@ThaiMaya192",
+      "https://zalo.me/0838580001",
+    ],
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: "5000",
+      bestRating: "5",
+      worstRating: "1",
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Cần Thơ",
+    },
     slogan: "Chân Mày Chuẩn Tướng - Vẻ Đẹp Trường Tồn",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Maya Thai cung cấp những dịch vụ gì?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Maya Thai chuyên xăm chân mày phong cách Thái Lan cho nam và nữ, phun môi nano Thái, đo vẽ chân mày theo tỷ lệ vàng và tư vấn diện tướng miễn phí.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Maya Thai ở đâu tại Cần Thơ?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Maya Thai tọa lạc tại 192 Trần Hưng Đạo, phường Thới Bình, quận Ninh Kiều, thành phố Cần Thơ. Mở cửa từ 08:00 đến 20:00 tất cả các ngày trong tuần.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Giờ làm việc của Maya Thai là bao nhiêu?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Maya Thai phục vụ từ 08:00 đến 20:00, từ Thứ 2 đến Chủ Nhật. Bạn có thể đặt lịch trước qua số điện thoại 0838 580 001.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Tư vấn chân mày tại Maya Thai có mất phí không?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dịch vụ tư vấn thiết kế chân mày theo diện tướng Thái Lan tại Maya Thai hoàn toàn miễn phí. Chuyên gia sẽ đo vẽ theo tỷ lệ vàng khuôn mặt riêng của bạn.",
+        },
+      },
+    ],
   },
 ];
 

@@ -12,7 +12,7 @@ export default function HeroSection() {
           fill
           preload
           className="object-cover object-center"
-          sizes="1000vw"
+          sizes="100vw"
           placeholder="blur"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/20 via-transparent to-dark/60" />
