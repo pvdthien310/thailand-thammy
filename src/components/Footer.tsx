@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { logos } from "@/data/images";
+import MapSection from "./MapSection";
 
 const quickLinks = [
   { label: "Giới Thiệu", href: "#gioi-thieu" },
@@ -34,7 +35,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 py-14">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="relative w-12 h-12 shrink-0">
                 <Image
@@ -80,7 +81,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="font-heading text-primary font-semibold text-base mb-4">
               Liên Hệ
             </h4>
@@ -90,6 +91,9 @@ export default function Footer() {
                 <span className="font-body text-white/50 text-sm leading-relaxed">
                   192 Trần Hưng Đạo, phường Thới Bình, quận Ninh Kiều, thành phố Cần Thơ
                 </span>
+              </li>
+              <li className="flex items-start gap-2">
+                <MapSection/>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary text-xs">📞</span>
